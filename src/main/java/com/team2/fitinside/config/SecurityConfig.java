@@ -81,13 +81,13 @@ public class SecurityConfig{
         return http.build();
     }
 
-    @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring()
-                .requestMatchers(toH2Console())
-                .requestMatchers("/static/")
-                .requestMatchers("/");
-    }
+//    @Bean
+//    public WebSecurityCustomizer webSecurityCustomizer() {
+//        return (web) -> web.ignoring()
+//                .requestMatchers(toH2Console())
+//                .requestMatchers("/static/")
+//                .requestMatchers("/");
+//    }
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
@@ -97,7 +97,7 @@ public class SecurityConfig{
         config.setAllowCredentials(true);
 
         // 오리진 허용
-        config.setAllowedOrigins(List.of("http://localhost:3000"));
+        config.setAllowedOrigins(List.of("https://fitinside.netlify.app"));
 
         // 모든 메서드 허용
         config.setAllowedMethods(Arrays.asList(
