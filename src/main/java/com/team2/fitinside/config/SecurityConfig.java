@@ -54,7 +54,7 @@ public class SecurityConfig{
 
         http.sessionManagement(AbstractHttpConfigurer::disable);
 
-        http.exceptionHandling(ex -> ex.authenticationEntryPoint(jwtAuthenticationEntryPoint).accessDeniedHandler(jwtAccessDeniedHandler));
+        http.exceptionHandling(ex -> ex.accessDeniedHandler(jwtAccessDeniedHandler).authenticationEntryPoint(jwtAuthenticationEntryPoint));
 
         http.authorizeHttpRequests(auth ->
                 auth

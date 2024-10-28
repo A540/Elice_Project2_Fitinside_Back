@@ -1,5 +1,7 @@
 package com.team2.fitinside.jwt;
 
+import com.team2.fitinside.global.exception.CustomException;
+import com.team2.fitinside.global.exception.ErrorCode;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -15,6 +17,7 @@ public class JwtAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
         // 필요한 권한이 없이 접근하려 할때 403
-        response.sendError(HttpServletResponse.SC_FORBIDDEN);
+//        response.sendError(HttpServletResponse.SC_FORBIDDEN);
+        throw new CustomException(ErrorCode.USER_NOT_AUTHORIZED);
     }
 }

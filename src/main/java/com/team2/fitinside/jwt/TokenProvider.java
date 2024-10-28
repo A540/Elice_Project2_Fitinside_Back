@@ -1,5 +1,7 @@
 package com.team2.fitinside.jwt;
 
+import com.team2.fitinside.global.exception.CustomException;
+import com.team2.fitinside.global.exception.ErrorCode;
 import com.team2.fitinside.member.dto.TokenDto;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
@@ -28,7 +30,6 @@ public class TokenProvider {
     private static final String BEARER_TYPE = "bearer";
 
     public static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 60 * 30L;
-//    public static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 30;
     public static final long REFRESH_TOKEN_EXPIRE_TIME = 1000 * 60 * 60L * 24 * 7;
 
     private final Key key;
@@ -81,7 +82,7 @@ public class TokenProvider {
         Claims claims = parseClaims(accessToken);
 
         if (claims.get(AUTHORITIES_KEY) == null) {
-            throw new RuntimeException("권한 정보가 없는 토큰입니다.");
+            throw new CustomException(ErrorCode.INVALID_AUTH_TOKEN);
         }
 
         Collection<? extends GrantedAuthority> authorities =
