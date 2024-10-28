@@ -32,7 +32,7 @@ public class MemberAdminController {
     }
 
     @DeleteMapping("/{memberId}")
-    public ResponseEntity<?> deleteMember(@PathVariable("memberId") Long memberId) {
+    public ResponseEntity<String> deleteMember(@PathVariable("memberId") Long memberId) {
         memberService.deleteMemberByMemberId(memberId);
         return ResponseEntity.status(HttpStatus.OK).body("회원 정지 완료 : " + memberId);
     }

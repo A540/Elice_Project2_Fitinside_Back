@@ -1,5 +1,7 @@
 package com.team2.fitinside.jwt;
 
+import com.team2.fitinside.global.exception.CustomException;
+import com.team2.fitinside.global.exception.ErrorCode;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.core.AuthenticationException;
@@ -14,6 +16,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
         // 유효한 자격증명을 제공하지 않고 접근하려 할때 401
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+//        response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+        throw new CustomException(ErrorCode.USER_NOT_AUTHENTICATED);
     }
 }
