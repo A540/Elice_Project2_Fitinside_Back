@@ -32,22 +32,6 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 
 ### Back-end
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/1f5af47a-5654-4ef8-a9e1-b34c3e22300d/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/70fed49e-c6a4-4ab9-8fcf-9cf67008f50b/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/17fef64a-bb8c-4c77-b5f6-284dfb8a8016/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/f17bbb5b-84c0-4d14-9004-c03f94938586/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/611a3ef3-cb99-4308-aafb-cf471cd68973/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/88aa8ee2-1468-4231-a2d1-70aece8df7f4/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/75bde23b-e19b-4239-8062-88d27aedaf83/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/3d078b5a-6d5d-4568-bbbd-115740fd5855/image.png)
-
 - Java 17 : 최신 LTS(Long-Term Support) 버전으로 안정성과 성능 제공
 - Spring Boot 3.3.4 : 경량화된 자바 프레임워크, RESTful API 구축 및 서버 사이드 로직 처리하는 역할을 수행하고 이번 프로젝트 표준 기술로 채택
 - Spring Security 3.3.4 : Spring Boot를 사용하여 개발하는 과정에 높은 연동성을 제공하고 인증, 권한 부여와 엑세스 제어등의 여러 기능을 편리하게 이용하여 사용자 데이터를 안전하게 보호
@@ -67,12 +51,6 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 - Axios: 백엔드와의 HTTP 통신을 위한 비동기 요청 처리 라이브러리
 
 ### 서비스 배포 환경
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/30b918a6-bd8f-41b1-be3c-6bcf1429f31d/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/aab9eb6c-319a-4f52-84f5-65c1b11f7294/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/1a8922ec-b0e7-494e-9dfd-a79218507d76/image.png)
 
 - 프론트엔드 배포
     - Netlify
