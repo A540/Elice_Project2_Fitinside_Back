@@ -2,7 +2,7 @@
 
 ---
 
-![image.png]([[https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/eefc5b89-8ea4-47b3-b8b9-5118ce8cae56/image.png](https://file.notion.so/f/f/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/eefc5b89-8ea4-47b3-b8b9-5118ce8cae56/image.png?table=block&id=44a088b4-7759-4511-82ee-78cb2808b4e1&spaceId=d85fd78d-de88-4966-9b27-62e3e2e8c2a0&expirationTimestamp=1738972800000&signature=D2U1iG9O7yKkBTmy_hPSDWwQHjwQrvHo21e7mBZkl1Y&downloadName=image.png](https://www.notion.so/README-19ad4d71c3cf80f6ab05d399cedc6925)))
+![image.png](https://file.notion.so/f/f/21794ba8-11b7-4066-9e95-53c520340266/eefc5b89-8ea4-47b3-b8b9-5118ce8cae56/image.png?table=block&id=19ad4d71-c3cf-8021-addd-dd8366e64792&spaceId=21794ba8-11b7-4066-9e95-53c520340266&expirationTimestamp=1739577600000&signature=q9_fMUcn7ZPRDUyBITNkJU-5JxhuEj9p71qleDi1DXk&downloadName=image.png))
 
 FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 웹사이트입니다.
 
