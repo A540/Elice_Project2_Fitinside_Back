@@ -2,8 +2,7 @@
 
 ---
 
-![image.png]([https://file.notion.so/f/f/21794ba8-11b7-4066-9e95-53c520340266/eefc5b89-8ea4-47b3-b8b9-5118ce8cae56/image.png?table=block&id=19ad4d71-c3cf-8021-addd-dd8366e64792&spaceId=21794ba8-11b7-4066-9e95-53c520340266&expirationTimestamp=1739577600000&signature=q9_fMUcn7ZPRDUyBITNkJU-5JxhuEj9p71qleDi1DXk&downloadName=image.png])
-
+<img src="https://github.com/user-attachments/assets/098762e0-b166-4a4a-8e7c-687eda22015a" alt="image" width="300px"/>
 FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 웹사이트입니다.
 
 사용자는 다양한 상품을 탐색하고, 원하는 상품을 장바구니에 담아 관리할 수 있습니다.
