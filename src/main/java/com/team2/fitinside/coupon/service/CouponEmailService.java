@@ -31,7 +31,7 @@ public class CouponEmailService {
             mimeMessageHelper.setSubject("FITinside 쿠폰 메일");
 
             // 발신자 설정
-            mimeMessageHelper.setFrom("chm20060@gmail.com", "FITinside 관리자");
+            mimeMessageHelper.setFrom("wlsdud2528@naver.com", "FITinside 관리자");
 
             // 메일의 내용 설정
             mimeMessageHelper.setText(dto.getTemplate(), true);
