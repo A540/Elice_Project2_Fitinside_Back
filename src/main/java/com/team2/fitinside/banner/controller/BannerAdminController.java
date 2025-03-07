@@ -17,9 +17,9 @@ public class BannerAdminController {
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<BannerResponseDTO> createBanner(
-            @RequestParam("title") String title,
-            @RequestParam("displayOrder") Integer displayOrder,
-            @RequestParam("image") MultipartFile image,
+            @RequestParam(value = "title") String title,
+            @RequestParam(value = "displayOrder") Integer displayOrder,
+            @RequestParam(value = "image") MultipartFile image,
             @RequestParam(value = "targetUrl", required = false) String targetUrl) {
 
         BannerResponseDTO responseDTO = bannerService.createBanner(title, displayOrder, image, targetUrl);
@@ -28,9 +28,9 @@ public class BannerAdminController {
 
     @PutMapping(value = "/{id}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<BannerResponseDTO> updateBanner(
-            @PathVariable Long id,
-            @RequestParam("title") String title,
-            @RequestParam("displayOrder") Integer displayOrder,
+            @PathVariable("id") Long id,
+            @RequestParam(value = "title") String title,
+            @RequestParam(value = "displayOrder") Integer displayOrder,
             @RequestParam(value = "image", required = false) MultipartFile image,
             @RequestParam(value = "targetUrl", required = false) String targetUrl) {
 
@@ -39,7 +39,7 @@ public class BannerAdminController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteBanner(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteBanner(@PathVariable("id") Long id) {
         bannerService.deleteBanner(id);
         return ResponseEntity.noContent().build();
     }

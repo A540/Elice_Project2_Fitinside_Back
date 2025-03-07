@@ -22,7 +22,7 @@ public class BannerController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<BannerResponseDTO> getBannerById(@PathVariable Long id) {
+    public ResponseEntity<BannerResponseDTO> getBannerById(@PathVariable("id") Long id) {
         BannerResponseDTO response = bannerService.getBannerById(id);
         return ResponseEntity.ok(response);
     }
