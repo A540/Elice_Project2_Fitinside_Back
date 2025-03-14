@@ -7,28 +7,18 @@ spring:
       max-file-size: 128MB
       max-request-size: 128MB
 
-  # H2 DB 설정
   datasource:
-    driver-class name: org.h2.Driver
-    url: jdbc:h2:mem:fitinside
-    username: sa
-    password: ''
-
-  # H2 console 설정
-  h2:
-    console:              # h2 DB를 웹에서 관리할 수 있는 기능
-      enabled: true       # h2 console 사용 여부
-      path: /h2-console   # h2 console 접속 주소
-
-  # jpa 설정
+    url: jdbc:mysql://localhost:3306/dbname
+    username: username
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: create    # DB 초기화 전략
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        format_sql: true  # 쿼리 로그 포맷 (저렬)
-        show_sql: true    # 쿼리 로그 출력
-    defer-datasource-initialization: true
+        dialect: org.hibernate.dialect.MySQLDialect
 
   security:
     oauth2:
@@ -43,9 +33,9 @@ spring:
 
   # 메일 SMTP 설정
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: chm20060
+    host: smtp.naver.com
+    port: 465
+    username: ${SMTP_ID}
     password: ${SMTP_PASSWORD}
     properties:
       mail:
@@ -54,6 +44,9 @@ spring:
           timeout: 5000
           starttls:
             enable: true
+          ssl:
+            enable: true
+            trust: smtp.naver.com
 
 jwt:
   secret: ${JWT_SECRET_KEY}
@@ -64,8 +57,8 @@ cloud:
       accessKey: ${AWS_ACCESS_KEY}
       secretKey: ${AWS_SECRET_KEY}
     s3:
-      bucketName: fitinside
+      bucketName: fitinsidebucket
     region:
-      static: ap-northeast-2
+      static: us-east-1
     stack:
       auto: false
