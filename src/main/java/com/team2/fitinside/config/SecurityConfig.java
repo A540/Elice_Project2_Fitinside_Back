@@ -85,7 +85,7 @@ public class SecurityConfig{
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring()
-                .requestMatchers(toH2Console())
+//                .requestMatchers(toH2Console())
                 .requestMatchers("/static/")
                 .requestMatchers("/");
     }
@@ -98,7 +98,7 @@ public class SecurityConfig{
         config.setAllowCredentials(true);
 
         // 오리진 허용
-        config.setAllowedOrigins(List.of("http://localhost:3000"));
+        config.setAllowedOrigins(List.of("https://fit-in-side.netlify.app", "http://localhost:3000"));
 
         // 모든 메서드 허용
         config.setAllowedMethods(Arrays.asList(
