@@ -371,7 +371,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ### 상세 API 명세서
 
-[API 명세서](https://www.notion.so/API-b31fc4fba5754d38917848d491b0528b?pvs=21) 
+[API 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-API-%EB%AA%85%EC%84%B8%EC%84%9C) 
 
 ## ERD
 
