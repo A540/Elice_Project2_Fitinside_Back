@@ -716,14 +716,8 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ---
 
 - Oauth 로그인 시 회원 id가 Long 타입이 아닌 String타입으로 담기는 문제가 발생하여 SecurityContextHolder 디버깅을 통해 데이터 확인 후 로그인 방식에 따라 회원 id를 다르게 가져오도록 처리
-    - [**Security 로그인 유저, Oauth2 로그인 유저로 만들어지는 SecurityContextHolder. authentication.getName()의 차이**](https://www.notion.so/Security-Oauth2-SecurityContextHolder-authentication-getName-9dee3bece0ed4ee5ac4e8b0054f3dd78?pvs=21)
+    - [**Security 로그인 유저, Oauth2 로그인 유저로 만들어지는 SecurityContextHolder. authentication.getName()의 차이**](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/Spring-Security---OAuth2-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A0%95%EB%B3%B4-%EC%A1%B0%ED%9A%8C-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0)
 - 쿠폰 도메인에서 여러 메서드에서 n+1 문제가 발생하여 레파지토리에 fetch join을 포함한 jpql을 적용하여 해결
-    - [트러블 슈팅 - 쿠폰 도메인에서 발생한 N+1 문제 ](https://www.notion.so/N-1-daca82b0021b4a73959d97a8aec70d1e?pvs=21)
+    - [트러블 슈팅 - 쿠폰 도메인에서 발생한 N+1 문제 ](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-%E2%80%90-%EC%BF%A0%ED%8F%B0-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90%EC%84%9C-%EB%B0%9C%EC%83%9D%ED%95%9C-N-1-%EB%AC%B8%EC%A0%9C)
 - 기술 표준 RFC에 따라 AccessToken을 json body로 전달, js조작의 편리함을 위해 RefreshToken만 쿠키에 저장하도록 결정
-    - [**JWT를 사용한 accessToken과 refreshToken 전달, 저장 방식 고찰**](https://www.notion.so/JWT-accessToken-refreshToken-3215693229954f3295a2327a4a97c41e?pvs=21)
-
-- 단위 테스트 코드 작성 시 JpaAuditingHandler 빈 생성 오류가 발생하여 JpaAuditingConfig 클래스를 생성하여 해결
-    - [트러블 슈팅 - 테스트 코드 작성 시JpaAuditingHandler 빈 생성 오류](https://www.notion.so/JpaAuditingHandler-a44647b8c17f4f20849d5594a1e13fc8?pvs=21)
-
-- 토큰 인증 예외가 아닌 경우에도 401 에러가 반환되는 문제가 발생하여 CustomExceptionHandler에 유효성 검사 예외 처리 메서드를 추가하여 해결
-    - [트러블 슈팅 - 토큰 인증 예외가 아닌 경우에도 401 에러가 반환되는 문제](https://www.notion.so/401-2e1a9d9321fe44d7a56975db16e01035?pvs=21)
+    - [**JWT를 사용한 accessToken과 refreshToken 전달, 저장 방식 고찰**](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/JWT%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-accessToken%EA%B3%BC-refreshToken-%EC%A0%84%EB%8B%AC,-%EC%A0%80%EC%9E%A5-%EB%B0%A9%EC%8B%9D-%EA%B3%A0%EC%B0%B0)
