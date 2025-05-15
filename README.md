@@ -349,7 +349,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ## 상세 기능
 
-[기능 명세서](https://www.notion.so/85d4b07fa8d441539a5ea5dc848a463f?pvs=21) 
+[기능 명세서]([https://www.notion.so/85d4b07fa8d441539a5ea5dc848a463f?pvs=21](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C)) 
 
 ## API 명세서
 
