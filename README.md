@@ -14,7 +14,6 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 
 ---
 
-간단한 이미지랑 태그걸기
 
 ## 개발 기간
 
@@ -25,10 +24,6 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 ## 기술 스택 (버전 기입)
 
 ---
-
-꼬리질문 3개 이상 (3줄 이상씩은 쓰기, ex. 뭐가 효율적인지?)
-
-다른 기술스택이랑 비교해서 이 기술을 선택한 이유
 
 ### Back-end
 
@@ -86,7 +81,6 @@ Discord, Notion
     - refactor: 기존 코드를 개선하고 구조를 변경하는 브랜치입니다. review-develop으로 merge 후 브랜치를 삭제해 주었습니다.
     - test: 테스트 코드를 작성하거나 기존 테스트 코드를 리팩토링 하는 브랜치입니다. review-develop으로 merge 후 브랜치를 삭제해 주었습니다.
 
-⇒ hotfix , release 브랜치를 안썼으니까 대응이 필요함
 
 ## 프로젝트 구조
 
@@ -379,13 +373,6 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ![ft.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/c2689960-5c8a-4f77-9f56-d283a3d1d3dd/ft.png)
 
-⇒ 카테고리의 displayOrder가 bigint인 이유?
-
-⇒ int, bigint 몇까지?
-
-⇒ erd 그려주는 프로그램 중 한글 주석도 같이 해주는 프로그램 (ex. isDeleted : 삭제여부)
-
-⇒ postalcode, phonenumber varchar255 유효성 검사
 
 ### 주요 API 명세서
 
