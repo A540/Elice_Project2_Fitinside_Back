@@ -218,22 +218,22 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 - 이메일, 비밀번호 기반의 로그인 기능
     
-    ![FITinside-Chrome-2024-10-24-15-54-44.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/7aced914-ba72-46b9-8c49-b6cd0036a711/FITinside-Chrome-2024-10-24-15-54-44.gif)
+    ![회원1.gif](./wiki/회원1.gif)
     
 - 이메일, 비밀번호 기반의 회원가입 기능
     
-    ![FITinside-Chrome-2024-10-24-15-20-15.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/7f0806ca-9b78-4f0c-b188-b791a7eb1c93/FITinside-Chrome-2024-10-24-15-20-15.gif)
+    ![FITinside-Chrome-2024-10-24-15-20-15.gif](./wiki/회원2.gif)
     
 - Google API Cloud 연동한 로그인 기능
     
-    ![FITinside-Chrome-2024-10-24-15-54-44.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ccb51f22-55e3-4c64-b291-45ebcaf3f66a/FITinside-Chrome-2024-10-24-15-54-44.gif)
+    ![FITinside-Chrome-2024-10-24-15-54-44.gif](./wiki/회원3.gif)
     
 - 클라이언트에 저장된 AccessToken으로 로그인 유지 기능
 - 토큰 탈취 대책으로 짧은 수명의 AccessToken, 자동 재발급을 위한 RefreshToken 쿠키 저장
 
 ### 배너
 
-![배너1.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ce6cf0c4-bb7e-4911-8a40-f4e276cbd6f5/%EB%B0%B0%EB%84%881.gif)
+![배너1.gif](./wiki/배너1.gif)
 
 - 메인 화면에서 광고 기능
 - 배너의 조회, 생성, 수정, 삭제 가능
@@ -243,7 +243,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 - 공통(회원, 관리자)
     
-    ![카테고리2.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ba53116d-33d8-4879-95be-62f62a014bba/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC2.gif)
+    ![카테고리2.gif](./wiki/카테고리1.gif)
     
     - 헤더
         
@@ -255,7 +255,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
         
 - 관리자
     
-    ![카테고리1.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/4e0f1478-936a-4e65-9ae6-21d087747eb8/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC1.gif)
+    ![카테고리1.gif](./wiki/카테고리2.gif)
     
     - 카테고리 생성, 수정, 삭제 가능(이미지와 정렬 순서 추가 가능)
 
@@ -264,25 +264,25 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 - 공통
     - 상품 조회 & 장바구니로 이동
     
-    ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/74fe05aa-1bc5-4017-9f1b-de7c5a68b77b/Desktop-2024.10.24-15.33.45.10_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3_-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7_-%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A1%E1%84%80%E1%85%AE%E1%84%82%E1%85%B5_.gif)
+    ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](./wiki/상품1.gif)
     
 - 관리자 페이지
     - 상품 조회 & 상품 등록
         
-        ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/45cb8492-366d-4dda-867c-bb356855ff01/Desktop-2024.10.24-15.22.02.05-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%83%E1%85%B3%E1%86%BC%E1%84%85%E1%85%A9%E1%86%A8_-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%89%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A6%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5_.gif)
+        ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](./wiki/상품2.gif)
         
     - 상품 관련 데이터를 수정
         
-        ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/2616efe9-77c9-4391-a135-b5d7e4874256/Desktop-2024.10.24-15.28.58.08-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC_.gif)
+        ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](./wiki/상품3.gif)
         
     - 상품 삭제
         
-        ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/0bc7022e-505e-40ca-af9d-bf9ddd17b616/Desktop-2024.10.24-15.31.44.09-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7-%E1%84%89%E1%85%A1%E1%86%A8%E1%84%8C%E1%85%A6_.gif)
+        ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](./wiki/상품4.gif)
         
 
 ### 장바구니
 
-![2024-10-24 15-21-01.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/305f273b-3d8d-44b4-bc8c-6a7c33b618aa/2024-10-24_15-21-01.gif)
+![2024-10-24 15-21-01.gif](./wiki/장바구니1.gif)
 
 - 비회원/회원 구분없이 장바구니 추가 가능
 - 장바구니 정보가 비회원은 로컬스토리지, 회원은 db에 저장
@@ -293,7 +293,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 - 관리자
     
-    ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/74017197-170e-41b1-86fc-a46132408f36/2024-10-244.33.01-ezgif.com-video-speed_(2).gif)
+    ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](./wiki/쿠폰1.gif)
     
     - 쿠폰 생성, 비활성화 가능
     - 쿠폰 목록 (전체 / 활성화만) 조회 (만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
@@ -301,7 +301,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
     - 미보유 회원에게 쿠폰 이메일 전송 가능
 - 회원
     
-    ![화면 기록 2024-10-24 오후 4.57.17.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/87136029-604e-4860-bbb0-5c00a6ffea12/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2024-10-24_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.57.17.gif)
+    ![화면 기록 2024-10-24 오후 4.57.17.gif](./wiki/쿠폰2.gif)
     
     - 쿠폰 다운로드 가능
     - 보유한 쿠폰 목록 (전체 / 사용가능) 조회(만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
@@ -311,13 +311,13 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 - 관리자
     
-    ![FITinside - Chrome 2024-10-25 03-06-05.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/46cddb2e-a644-46df-8e7d-e54ba9818cf0/FITinside_-_Chrome_2024-10-25_03-06-05.gif)
+    ![FITinside - Chrome 2024-10-25 03-06-05.gif](./wiki/주문1.gif)
     
     - 회원의 주문 관리 → 주문 상태 변경, 주문 삭제
     - 주문 상태, 날짜별 검색 기능
 - 회원
     
-    ![FITinside-Chrome-2024-10-25-10-44-32.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/c08ec402-9ae7-4a19-af44-51f2f2c39241/FITinside-Chrome-2024-10-25-10-44-32.gif)
+    ![FITinside-Chrome-2024-10-25-10-44-32.gif](./wiki/주문2.gif)
     
     - 배송지 입력 후 주문 생성 가능
     - 주문 상세 조회
@@ -332,7 +332,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 - 회원
     
-    ![FITinside-Chrome-2024-10-25-03-37-53.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/019192c9-29a5-4eda-a880-b9165a6afced/FITinside-Chrome-2024-10-25-03-37-53.gif)
+    ![FITinside-Chrome-2024-10-25-03-37-53.gif](./wiki/배송지1.gif)
     
     - 배송지는 회원당 최대 5개 저장 가능
         - 5개 제한 → 사용자 편의성 고려
@@ -371,7 +371,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ---
 
-![ft.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/c2689960-5c8a-4f77-9f56-d283a3d1d3dd/ft.png)
+![ft.png](./wiki/erd.png)
 
 
 ### 주요 API 명세서
