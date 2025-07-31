@@ -14,7 +14,12 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 
 ---
 
-간단한 이미지랑 태그걸기
+- 회원가입/로그인 → 박진영(팀장)
+- 카테고리/배너 → 유연주
+- 상품관리 → 이하현
+- 장바구니/쿠폰 → 안창민
+- 주문/배송지 → 허수빈
+
 
 ## 개발 기간
 
@@ -26,17 +31,13 @@ FITinside는 LF몰, 무신사와 같은 온라인 쇼핑몰을 모티브로 한 
 
 ---
 
-꼬리질문 3개 이상 (3줄 이상씩은 쓰기, ex. 뭐가 효율적인지?)
-
-다른 기술스택이랑 비교해서 이 기술을 선택한 이유
-
 ### Back-end
 
 - Java 17 : 최신 LTS(Long-Term Support) 버전으로 안정성과 성능 제공
 - Spring Boot 3.3.4 : 경량화된 자바 프레임워크, RESTful API 구축 및 서버 사이드 로직 처리하는 역할을 수행하고 이번 프로젝트 표준 기술로 채택
 - Spring Security 3.3.4 : Spring Boot를 사용하여 개발하는 과정에 높은 연동성을 제공하고 인증, 권한 부여와 엑세스 제어등의 여러 기능을 편리하게 이용하여 사용자 데이터를 안전하게 보호
-- JWT 0.12.1: 무상태성(State-Less)를 지향하는 HTTP의 ~~단점을 보완~~ 특성에 적합하고 로그인 정보가 필요한 부분의 확장을 용이하게하는 장점을 이용하고자 선택
-- JPA 3.3.4: 개발 과정에서 여러 데이터베이스 사용하고 연동하기 위한 ORM 기술을 사용해 객체지향 언어를 사용한 Spring Boot 프로젝트에 적합  ~~효율적인 데이터베이스 처리 구현~~하고 MyBatis와 같은 SQL Mapping 기술보다 단순한 DB조작을 많이 하는 서비스를 구현하는 이번 프로젝트에 적합
+- JWT 0.12.1: 무상태성(State-Less)를 지향하는 HTTP 특성에 적합하고 로그인 정보가 필요한 부분의 확장을 용이하게하는 장점을 이용하고자 선택
+- JPA 3.3.4: 개발 과정에서 여러 데이터베이스 사용하고 연동하기 위한 ORM 기술을 사용해 객체지향 언어를 사용한 Spring Boot 프로젝트에 적합하고 MyBatis와 같은 SQL Mapping 기술보다 단순한 DB조작을 많이 하는 서비스를 구현하는 이번 프로젝트에 적합
     - ⇒ 내부적으로 최적화하는 부분 많음 / 면접을 위해서 공부하
 - MySQL(AWS RDS): 관계형 데이터베이스, 쇼핑몰의 데이터를 저장 및 관리
 - Mockito 5.11.0: 단위 테스트를 위한 Mock 라이브러리 ⇒ JUnit
@@ -86,14 +87,13 @@ Discord, Notion
     - refactor: 기존 코드를 개선하고 구조를 변경하는 브랜치입니다. review-develop으로 merge 후 브랜치를 삭제해 주었습니다.
     - test: 테스트 코드를 작성하거나 기존 테스트 코드를 리팩토링 하는 브랜치입니다. review-develop으로 merge 후 브랜치를 삭제해 주었습니다.
 
-⇒ hotfix , release 브랜치를 안썼으니까 대응이 필요함
 
 ## 프로젝트 구조
 
 ---
 
 - 도메인별 사용안하는 exception 패키지 삭제하기
-    
+
     ```bash
     
     # address : 배송지
@@ -200,19 +200,6 @@ Discord, Notion
                      
     
     ```
-    
-
-## 역할 분담
-
----
-
-- 회원가입/로그인 → 박진영
-- 카테고리/배너 → 유연주
-- 상품관리 → 이하현
-- 장바구니/쿠폰 → 안창민
-- 주문/배송지 → 허수빈
-
-organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들의 깃헙 아이디를 태그 (링크 걸어놓음)
 
 ## 주요 기능
 
@@ -223,23 +210,23 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ### 회원
 
 - 이메일, 비밀번호 기반의 로그인 기능
-    
-    ![FITinside-Chrome-2024-10-24-15-54-44.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/7aced914-ba72-46b9-8c49-b6cd0036a711/FITinside-Chrome-2024-10-24-15-54-44.gif)
-    
+
+  ![회원1.gif](./wiki/회원1.gif)
+
 - 이메일, 비밀번호 기반의 회원가입 기능
-    
-    ![FITinside-Chrome-2024-10-24-15-20-15.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/7f0806ca-9b78-4f0c-b188-b791a7eb1c93/FITinside-Chrome-2024-10-24-15-20-15.gif)
-    
+
+  ![FITinside-Chrome-2024-10-24-15-20-15.gif](./wiki/회원2.gif)
+
 - Google API Cloud 연동한 로그인 기능
-    
-    ![FITinside-Chrome-2024-10-24-15-54-44.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ccb51f22-55e3-4c64-b291-45ebcaf3f66a/FITinside-Chrome-2024-10-24-15-54-44.gif)
-    
+
+  ![FITinside-Chrome-2024-10-24-15-54-44.gif](./wiki/회원3.gif)
+
 - 클라이언트에 저장된 AccessToken으로 로그인 유지 기능
 - 토큰 탈취 대책으로 짧은 수명의 AccessToken, 자동 재발급을 위한 RefreshToken 쿠키 저장
 
 ### 배너
 
-![배너1.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ce6cf0c4-bb7e-4911-8a40-f4e276cbd6f5/%EB%B0%B0%EB%84%881.gif)
+![배너1.gif](./wiki/배너1.gif)
 
 - 메인 화면에서 광고 기능
 - 배너의 조회, 생성, 수정, 삭제 가능
@@ -248,47 +235,47 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ### 카테고리
 
 - 공통(회원, 관리자)
-    
-    ![카테고리2.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/ba53116d-33d8-4879-95be-62f62a014bba/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC2.gif)
-    
+
+  ![카테고리2.gif](./wiki/카테고리1.gif)
+
     - 헤더
-        
-        부모 카테고리의 드롭 다운을 통해 자식 카테고리 조회 가능
-        
+
+      부모 카테고리의 드롭 다운을 통해 자식 카테고리 조회 가능
+
     - 이미지 포함 카테고리
-        
-        이미지와 포함 카테고리 조회 가능
-        
+
+      이미지와 포함 카테고리 조회 가능
+
 - 관리자
-    
-    ![카테고리1.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/4e0f1478-936a-4e65-9ae6-21d087747eb8/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC1.gif)
-    
+
+  ![카테고리1.gif](./wiki/카테고리2.gif)
+
     - 카테고리 생성, 수정, 삭제 가능(이미지와 정렬 순서 추가 가능)
 
 ### 상품
 
 - 공통
     - 상품 조회 & 장바구니로 이동
-    
-    ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/74fe05aa-1bc5-4017-9f1b-de7c5a68b77b/Desktop-2024.10.24-15.33.45.10_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%85%E1%85%B5%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3_-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7_-%E1%84%8C%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A1%E1%84%80%E1%85%AE%E1%84%82%E1%85%B5_.gif)
-    
+
+  ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](./wiki/상품1.gif)
+
 - 관리자 페이지
     - 상품 조회 & 상품 등록
-        
-        ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/45cb8492-366d-4dda-867c-bb356855ff01/Desktop-2024.10.24-15.22.02.05-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%83%E1%85%B3%E1%86%BC%E1%84%85%E1%85%A9%E1%86%A8_-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%89%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A6%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5_.gif)
-        
+
+      ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](./wiki/상품2.gif)
+
     - 상품 관련 데이터를 수정
-        
-        ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/2616efe9-77c9-4391-a135-b5d7e4874256/Desktop-2024.10.24-15.28.58.08-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC_.gif)
-        
+
+      ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](./wiki/상품3.gif)
+
     - 상품 삭제
-        
-        ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/0bc7022e-505e-40ca-af9d-bf9ddd17b616/Desktop-2024.10.24-15.31.44.09-_%E1%84%89%E1%85%A1%E1%86%BC%E1%84%91%E1%85%AE%E1%86%B7-%E1%84%89%E1%85%A1%E1%86%A8%E1%84%8C%E1%85%A6_.gif)
-        
+
+      ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](./wiki/상품4.gif)
+
 
 ### 장바구니
 
-![2024-10-24 15-21-01.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/305f273b-3d8d-44b4-bc8c-6a7c33b618aa/2024-10-24_15-21-01.gif)
+![2024-10-24 15-21-01.gif](./wiki/장바구니1.gif)
 
 - 비회원/회원 구분없이 장바구니 추가 가능
 - 장바구니 정보가 비회원은 로컬스토리지, 회원은 db에 저장
@@ -298,17 +285,17 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ### 쿠폰
 
 - 관리자
-    
-    ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/74017197-170e-41b1-86fc-a46132408f36/2024-10-244.33.01-ezgif.com-video-speed_(2).gif)
-    
+
+  ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](./wiki/쿠폰1.gif)
+
     - 쿠폰 생성, 비활성화 가능
     - 쿠폰 목록 (전체 / 활성화만) 조회 (만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
     - 쿠폰 보유 (페이지네이션 적용), 미보유 회원 조회 가능
     - 미보유 회원에게 쿠폰 이메일 전송 가능
 - 회원
-    
-    ![화면 기록 2024-10-24 오후 4.57.17.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/87136029-604e-4860-bbb0-5c00a6ffea12/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2024-10-24_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.57.17.gif)
-    
+
+  ![화면 기록 2024-10-24 오후 4.57.17.gif](./wiki/쿠폰2.gif)
+
     - 쿠폰 다운로드 가능
     - 보유한 쿠폰 목록 (전체 / 사용가능) 조회(만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
     - 쿠폰 사용 내역 (주문서) 조회 가능
@@ -316,15 +303,15 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ### 주문
 
 - 관리자
-    
-    ![FITinside - Chrome 2024-10-25 03-06-05.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/46cddb2e-a644-46df-8e7d-e54ba9818cf0/FITinside_-_Chrome_2024-10-25_03-06-05.gif)
-    
+
+  ![FITinside - Chrome 2024-10-25 03-06-05.gif](./wiki/주문1.gif)
+
     - 회원의 주문 관리 → 주문 상태 변경, 주문 삭제
     - 주문 상태, 날짜별 검색 기능
 - 회원
-    
-    ![FITinside-Chrome-2024-10-25-10-44-32.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/c08ec402-9ae7-4a19-af44-51f2f2c39241/FITinside-Chrome-2024-10-25-10-44-32.gif)
-    
+
+  ![FITinside-Chrome-2024-10-25-10-44-32.gif](./wiki/주문2.gif)
+
     - 배송지 입력 후 주문 생성 가능
     - 주문 상세 조회
         - 배송 시작 전이면 배송지 수정 / 주문 취소 가능
@@ -332,14 +319,14 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
     - 주문 목록 조회
         - 한 페이지에 총 5개씩 주문 확인 가능 (최신순 정렬)
         - 상품명 검색 기능
-    
+
 
 ### 배송지
 
 - 회원
-    
-    ![FITinside-Chrome-2024-10-25-03-37-53.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/019192c9-29a5-4eda-a880-b9165a6afced/FITinside-Chrome-2024-10-25-03-37-53.gif)
-    
+
+  ![FITinside-Chrome-2024-10-25-03-37-53.gif](./wiki/배송지1.gif)
+
     - 배송지는 회원당 최대 5개 저장 가능
         - 5개 제한 → 사용자 편의성 고려
         - 수령인 이름, 우편번호, 주소, 전화번호 중 하나라도 다르면 다른 배송지로 간주
@@ -349,7 +336,7 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ## 상세 기능
 
-[기능 명세서](https://www.notion.so/85d4b07fa8d441539a5ea5dc848a463f?pvs=21) 
+[기능 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C)
 
 ## API 명세서
 
@@ -371,21 +358,14 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 
 ### 상세 API 명세서
 
-[API 명세서](https://www.notion.so/API-b31fc4fba5754d38917848d491b0528b?pvs=21) 
+[API 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-API-%EB%AA%85%EC%84%B8%EC%84%9C)
 
 ## ERD
 
 ---
 
-![ft.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d85fd78d-de88-4966-9b27-62e3e2e8c2a0/c2689960-5c8a-4f77-9f56-d283a3d1d3dd/ft.png)
+![ft.png](./wiki/erd.png)
 
-⇒ 카테고리의 displayOrder가 bigint인 이유?
-
-⇒ int, bigint 몇까지?
-
-⇒ erd 그려주는 프로그램 중 한글 주석도 같이 해주는 프로그램 (ex. isDeleted : 삭제여부)
-
-⇒ postalcode, phonenumber varchar255 유효성 검사
 
 ### 주요 API 명세서
 
@@ -418,9 +398,9 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 | 상품 목록 조회 | GET | /api/products | 전체 상품 목록 조회 (페이지네이션, 정렬, 검색 적용) | - | page (int), size (int), sortField (string), sortDir (string), keyword (string) | - **200 OK** : 상품 목록 조회 성공
 { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "createdAt": "datetime", "soldOut": "boolean" }
 - **400 Bad Request**: 잘못된 요청  |
-| 상품 상세 조회 | GET | /api/products/{id} | 특정 상품 상세 조회 | - | id (Long) | - **200 OK** : 상품 상세 조회 성공 
- { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "info": "string", "manufacturer": "string", "productImgUrls": ["url1", "url2"], "createdAt": "datetime", "updatedAt": "datetime", "soldOut": "boolean" } 
-- **400 Bad Request**: 잘못된 요청 
+  | 상품 상세 조회 | GET | /api/products/{id} | 특정 상품 상세 조회 | - | id (Long) | - **200 OK** : 상품 상세 조회 성공
+  { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "info": "string", "manufacturer": "string", "productImgUrls": ["url1", "url2"], "createdAt": "datetime", "updatedAt": "datetime", "soldOut": "boolean" }
+- **400 Bad Request**: 잘못된 요청
 - **404 Not Found**: 상품을 찾을 수 없음 |
 
 ### 장바구니 (`Cart`)
@@ -431,13 +411,13 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 | --- | --- | --- | --- | --- | --- | --- |
 | 조회 | GET | /api/carts | 로그인 한 회원의 장바구니 목록 조회 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : 
 {
-    ”message”: “장바구니 조회 완료했습니다!”,
-    “carts”: [
-        {
-            ”productId”: Long,
-            “quantity”: int
-        }
-    ]
+”message”: “장바구니 조회 완료했습니다!”,
+“carts”: [
+{
+”productId”: Long,
+“quantity”: int
+}
+]
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -452,27 +432,27 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 | MVP | Method | URI | Description | Headers | Request Param | Response |
 | --- | --- | --- | --- | --- | --- | --- |
 | 쿠폰 목록 조회 | GET | /api/admin/coupons | 존재하는 쿠폰 전체 조회 (유효한 쿠폰만 조회 / 전체 쿠폰 조회) | `Authorization: Bearer JWT_TOKEN` | {
-  “page”: int,
-  “includeInActiveCoupons”: boolean
-} | - 200 OK : 
+“page”: int,
+“includeInActiveCoupons”: boolean
+} | - 200 OK :
 {
-    ”message”: “쿠폰 목록 조회 완료했습니다!”,
-    “coupons”: [
-        {
-            “id”: Long,
-             “name”: String,
-             “code”: String,
-             “type”: CouponType,
-             “value”: int,
-             “percentage”: int,
-             “minValue”: int,
-             “active”: boolean,
-             “expiredAt”: LocalDate,
-             “categoryName”: String,
-             “used”: boolean
-         }
-    ],
-    “totalPages”: int
+”message”: “쿠폰 목록 조회 완료했습니다!”,
+“coupons”: [
+{
+“id”: Long,
+“name”: String,
+“code”: String,
+“type”: CouponType,
+“value”: int,
+“percentage”: int,
+“minValue”: int,
+“active”: boolean,
+“expiredAt”: LocalDate,
+“categoryName”: String,
+“used”: boolean
+}
+],
+“totalPages”: int
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -485,30 +465,30 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 | 보유 쿠폰 전체 조회 | GET | /api/coupons | 로그인 한 회원의 보유 쿠폰 전체 조회 (유효한 쿠폰만 조회 / 전체 쿠폰 조회) | `Authorization: Bearer JWT_TOKEN` | {
     “page”: int,
     “includeInActiveCoupons”: boolean
-} | - 200 OK : 
+} | - 200 OK :
 {
 ”message”: “쿠폰 목록 조회 완료했습니다!”
-    “coupons”: [
-        {
-            “id”: Long,
-            “name”: String,
-            “code”: String,
-            “type”: CouponType,
-            “value”: int,
-            “percentage”: int,
-            “minValue”: int,
-            “active”: boolean,
-            “expiredAt”: LocalDate,
-            “categoryName”: String,
-            “used”: boolean
-         }
-    ],
-    “totalPages”: int
+“coupons”: [
+{
+“id”: Long,
+“name”: String,
+“code”: String,
+“type”: CouponType,
+“value”: int,
+“percentage”: int,
+“minValue”: int,
+“active”: boolean,
+“expiredAt”: LocalDate,
+“categoryName”: String,
+“used”: boolean
+}
+],
+“totalPages”: int
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
 - 500 Internal Server Error : “서버 에러” |
-| 쿠폰 사용 | POST | /api/coupons/{couponMemberId} | 상품에 쿠폰 사용 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : “쿠폰이 사용되었습니다! couponMemberId: ” + couponMemberId
+  | 쿠폰 사용 | POST | /api/coupons/{couponMemberId} | 상품에 쿠폰 사용 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : “쿠폰이 사용되었습니다! couponMemberId: ” + couponMemberId
 
 - 400 Bad Request : “쿠폰 정보가 유효하지 않습니다.”
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -526,46 +506,46 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 }` | - 200 OK :
 `[{
 "orders":[
-  {"orderId":"int",
-  "orderStatus":"string",
-  "totalPrice":"int",
-  "discountedTotalPrice":"int",
-  "email":"string",
-  "createdAt":"localDateTime",
-  "coupons":[
-    {"couponId":"int",
-    "name":"string",
-    "discountPrice":"int"}
-  ]}
+{"orderId":"int",
+"orderStatus":"string",
+"totalPrice":"int",
+"discountedTotalPrice":"int",
+"email":"string",
+"createdAt":"localDateTime",
+"coupons":[
+{"couponId":"int",
+"name":"string",
+"discountPrice":"int"}
+]}
 ],
 "totalPages":"int"
 }]`
 
 - 403 Forbidden : “권한이 없습니다.”
 - 500 Internal Server Error : “서버 에러” |
-| 전체 주문 조회 (회원) | GET | /api/orders | 각 회원의 전체 주문 조회 |  | `{
+  | 전체 주문 조회 (회원) | GET | /api/orders | 각 회원의 전체 주문 조회 |  | `{
 "page":"int",
 "productName":"string"
 }` | - 200 OK :
-`[{
-"orders":[
-  "orderId":"int",
-  "orderStatus":"string",
-  "totalPrice":"int",
-  "discountedTotalPrice":"int",
-  "deliveryAddress":"string",
-  "productNames":[
-    "string"
-  ],{}
-  "productImgUrl":"string",
-  "createdAt":"localDateTime"
-],
-"totalPages":"int"
-}]`
+  `[{
+  "orders":[
+    "orderId":"int",
+    "orderStatus":"string",
+    "totalPrice":"int",
+    "discountedTotalPrice":"int",
+    "deliveryAddress":"string",
+    "productNames":[
+      "string"
+    ],{}
+    "productImgUrl":"string",
+    "createdAt":"localDateTime"
+  ],
+  "totalPages":"int"
+  }]`
 
 - 403 Forbidden : “권한이 없습니다.”
 - 500 Internal Server Error : “서버 에러” |
-| 주문 생성 (회원) | POST | /api/order | 주문 생성 | `{
+  | 주문 생성 (회원) | POST | /api/order | 주문 생성 | `{
 "postalCode":"string",
 "deliveryAddress":"string",
 "detailedAddress":"string",
@@ -584,29 +564,29 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
   "couponMemberId":"int"
 ]
 }` |  | - 201 Created :
-`{
-"orderId":"int",
-"orderStatus":"string",
-"totalPrice":"int",
-"discountedTotalPrice":"int",
-"deliveryFee":"int",
-"postalCode":"string",
-"deliveryAddress":"string",
-"detailedAddress":"string",
-"deliveryReceiver":"string",
-"deliveryPhone":"string",
-"deliveryMemo":"string",
-"createdAt":"localDateTime",
-"orderProducts":[
-  "productId":"int",
-  "orderProductName":"string",
-  "orderProductPrice":"int",
-  "count":"int",
-  "discountedPrice":"int",
-  "couponName":"string",
-  "productImgUrl":"stirng"
-]
-}`
+  `{
+  "orderId":"int",
+  "orderStatus":"string",
+  "totalPrice":"int",
+  "discountedTotalPrice":"int",
+  "deliveryFee":"int",
+  "postalCode":"string",
+  "deliveryAddress":"string",
+  "detailedAddress":"string",
+  "deliveryReceiver":"string",
+  "deliveryPhone":"string",
+  "deliveryMemo":"string",
+  "createdAt":"localDateTime",
+  "orderProducts":[
+    "productId":"int",
+    "orderProductName":"string",
+    "orderProductPrice":"int",
+    "count":"int",
+    "discountedPrice":"int",
+    "couponName":"string",
+    "productImgUrl":"stirng"
+  ]
+  }`
 
 - 400 Bad Request : “품절된 상품”
 - 403 Forbidden : “권한이 없습니다.”
@@ -716,14 +696,8 @@ organization 한개 만들어서 모든 팀원이 들어올것 → 각 팀원들
 ---
 
 - Oauth 로그인 시 회원 id가 Long 타입이 아닌 String타입으로 담기는 문제가 발생하여 SecurityContextHolder 디버깅을 통해 데이터 확인 후 로그인 방식에 따라 회원 id를 다르게 가져오도록 처리
-    - [**Security 로그인 유저, Oauth2 로그인 유저로 만들어지는 SecurityContextHolder. authentication.getName()의 차이**](https://www.notion.so/Security-Oauth2-SecurityContextHolder-authentication-getName-9dee3bece0ed4ee5ac4e8b0054f3dd78?pvs=21)
+    - [**Security 로그인 유저, Oauth2 로그인 유저로 만들어지는 SecurityContextHolder. authentication.getName()의 차이**](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/Spring-Security---OAuth2-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A0%95%EB%B3%B4-%EC%A1%B0%ED%9A%8C-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0)
 - 쿠폰 도메인에서 여러 메서드에서 n+1 문제가 발생하여 레파지토리에 fetch join을 포함한 jpql을 적용하여 해결
-    - [트러블 슈팅 - 쿠폰 도메인에서 발생한 N+1 문제 ](https://www.notion.so/N-1-daca82b0021b4a73959d97a8aec70d1e?pvs=21)
+    - [트러블 슈팅 - 쿠폰 도메인에서 발생한 N+1 문제 ](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85-%E2%80%90-%EC%BF%A0%ED%8F%B0-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90%EC%84%9C-%EB%B0%9C%EC%83%9D%ED%95%9C-N-1-%EB%AC%B8%EC%A0%9C)
 - 기술 표준 RFC에 따라 AccessToken을 json body로 전달, js조작의 편리함을 위해 RefreshToken만 쿠키에 저장하도록 결정
-    - [**JWT를 사용한 accessToken과 refreshToken 전달, 저장 방식 고찰**](https://www.notion.so/JWT-accessToken-refreshToken-3215693229954f3295a2327a4a97c41e?pvs=21)
-
-- 단위 테스트 코드 작성 시 JpaAuditingHandler 빈 생성 오류가 발생하여 JpaAuditingConfig 클래스를 생성하여 해결
-    - [트러블 슈팅 - 테스트 코드 작성 시JpaAuditingHandler 빈 생성 오류](https://www.notion.so/JpaAuditingHandler-a44647b8c17f4f20849d5594a1e13fc8?pvs=21)
-
-- 토큰 인증 예외가 아닌 경우에도 401 에러가 반환되는 문제가 발생하여 CustomExceptionHandler에 유효성 검사 예외 처리 메서드를 추가하여 해결
-    - [트러블 슈팅 - 토큰 인증 예외가 아닌 경우에도 401 에러가 반환되는 문제](https://www.notion.so/401-2e1a9d9321fe44d7a56975db16e01035?pvs=21)
+    - [**JWT를 사용한 accessToken과 refreshToken 전달, 저장 방식 고찰**](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/JWT%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-accessToken%EA%B3%BC-refreshToken-%EC%A0%84%EB%8B%AC,-%EC%A0%80%EC%9E%A5-%EB%B0%A9%EC%8B%9D-%EA%B3%A0%EC%B0%B0)
