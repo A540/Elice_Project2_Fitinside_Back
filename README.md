@@ -92,8 +92,6 @@ Discord, Notion
 
 ---
 
-- 도메인별 사용안하는 exception 패키지 삭제하기
-
     ```bash
     
     # address : 배송지
@@ -211,16 +209,16 @@ Discord, Notion
 
 - 이메일, 비밀번호 기반의 로그인 기능
 
-  ![회원1.gif](./wiki/회원1.gif)
-
+    ![회원1.gif](./wiki/회원1.gif)
+    
 - 이메일, 비밀번호 기반의 회원가입 기능
-
-  ![FITinside-Chrome-2024-10-24-15-20-15.gif](./wiki/회원2.gif)
-
+    
+    ![FITinside-Chrome-2024-10-24-15-20-15.gif](./wiki/회원2.gif)
+    
 - Google API Cloud 연동한 로그인 기능
-
-  ![FITinside-Chrome-2024-10-24-15-54-44.gif](./wiki/회원3.gif)
-
+    
+    ![FITinside-Chrome-2024-10-24-15-54-44.gif](./wiki/회원3.gif)
+    
 - 클라이언트에 저장된 AccessToken으로 로그인 유지 기능
 - 토큰 탈취 대책으로 짧은 수명의 AccessToken, 자동 재발급을 위한 RefreshToken 쿠키 저장
 
@@ -235,43 +233,43 @@ Discord, Notion
 ### 카테고리
 
 - 공통(회원, 관리자)
-
-  ![카테고리2.gif](./wiki/카테고리1.gif)
-
+    
+    ![카테고리2.gif](./wiki/카테고리1.gif)
+    
     - 헤더
-
-      부모 카테고리의 드롭 다운을 통해 자식 카테고리 조회 가능
-
+        
+        부모 카테고리의 드롭 다운을 통해 자식 카테고리 조회 가능
+        
     - 이미지 포함 카테고리
-
-      이미지와 포함 카테고리 조회 가능
-
+        
+        이미지와 포함 카테고리 조회 가능
+        
 - 관리자
-
-  ![카테고리1.gif](./wiki/카테고리2.gif)
-
+    
+    ![카테고리1.gif](./wiki/카테고리2.gif)
+    
     - 카테고리 생성, 수정, 삭제 가능(이미지와 정렬 순서 추가 가능)
 
 ### 상품
 
 - 공통
     - 상품 조회 & 장바구니로 이동
-
-  ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](./wiki/상품1.gif)
-
+    
+    ![Desktop-2024.10.24-15.33.45.10_상품리스트_-상품_-장바구니_.gif](./wiki/상품1.gif)
+    
 - 관리자 페이지
     - 상품 조회 & 상품 등록
-
-      ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](./wiki/상품2.gif)
-
+        
+        ![Desktop-2024.10.24-15.22.02.05-_상품등록_-상품상세페이지_.gif](./wiki/상품2.gif)
+        
     - 상품 관련 데이터를 수정
-
-      ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](./wiki/상품3.gif)
-
+        
+        ![Desktop-2024.10.24-15.28.58.08-_상품수정_.gif](./wiki/상품3.gif)
+        
     - 상품 삭제
-
-      ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](./wiki/상품4.gif)
-
+        
+        ![Desktop-2024.10.24-15.31.44.09-_상품-삭제_.gif](./wiki/상품4.gif)
+        
 
 ### 장바구니
 
@@ -285,17 +283,17 @@ Discord, Notion
 ### 쿠폰
 
 - 관리자
-
-  ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](./wiki/쿠폰1.gif)
-
+    
+    ![2024-10-244.33.01-ezgif.com-video-speed (2).gif](./wiki/쿠폰1.gif)
+    
     - 쿠폰 생성, 비활성화 가능
     - 쿠폰 목록 (전체 / 활성화만) 조회 (만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
     - 쿠폰 보유 (페이지네이션 적용), 미보유 회원 조회 가능
     - 미보유 회원에게 쿠폰 이메일 전송 가능
 - 회원
-
-  ![화면 기록 2024-10-24 오후 4.57.17.gif](./wiki/쿠폰2.gif)
-
+    
+    ![화면 기록 2024-10-24 오후 4.57.17.gif](./wiki/쿠폰2.gif)
+    
     - 쿠폰 다운로드 가능
     - 보유한 쿠폰 목록 (전체 / 사용가능) 조회(만료일 기준 오름차순 정렬, 페이지네이션 적용) 가능
     - 쿠폰 사용 내역 (주문서) 조회 가능
@@ -303,15 +301,15 @@ Discord, Notion
 ### 주문
 
 - 관리자
-
-  ![FITinside - Chrome 2024-10-25 03-06-05.gif](./wiki/주문1.gif)
-
+    
+    ![FITinside - Chrome 2024-10-25 03-06-05.gif](./wiki/주문1.gif)
+    
     - 회원의 주문 관리 → 주문 상태 변경, 주문 삭제
     - 주문 상태, 날짜별 검색 기능
 - 회원
-
-  ![FITinside-Chrome-2024-10-25-10-44-32.gif](./wiki/주문2.gif)
-
+    
+    ![FITinside-Chrome-2024-10-25-10-44-32.gif](./wiki/주문2.gif)
+    
     - 배송지 입력 후 주문 생성 가능
     - 주문 상세 조회
         - 배송 시작 전이면 배송지 수정 / 주문 취소 가능
@@ -319,14 +317,14 @@ Discord, Notion
     - 주문 목록 조회
         - 한 페이지에 총 5개씩 주문 확인 가능 (최신순 정렬)
         - 상품명 검색 기능
-
+    
 
 ### 배송지
 
 - 회원
-
-  ![FITinside-Chrome-2024-10-25-03-37-53.gif](./wiki/배송지1.gif)
-
+    
+    ![FITinside-Chrome-2024-10-25-03-37-53.gif](./wiki/배송지1.gif)
+    
     - 배송지는 회원당 최대 5개 저장 가능
         - 5개 제한 → 사용자 편의성 고려
         - 수령인 이름, 우편번호, 주소, 전화번호 중 하나라도 다르면 다른 배송지로 간주
@@ -336,7 +334,7 @@ Discord, Notion
 
 ## 상세 기능
 
-[기능 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C)
+[기능 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C) 
 
 ## API 명세서
 
@@ -358,7 +356,7 @@ Discord, Notion
 
 ### 상세 API 명세서
 
-[API 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-API-%EB%AA%85%EC%84%B8%EC%84%9C)
+[API 명세서](https://github.com/A540/Elice_Project2_Fitinside_Back/wiki/FitInside-API-%EB%AA%85%EC%84%B8%EC%84%9C) 
 
 ## ERD
 
@@ -398,9 +396,9 @@ Discord, Notion
 | 상품 목록 조회 | GET | /api/products | 전체 상품 목록 조회 (페이지네이션, 정렬, 검색 적용) | - | page (int), size (int), sortField (string), sortDir (string), keyword (string) | - **200 OK** : 상품 목록 조회 성공
 { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "createdAt": "datetime", "soldOut": "boolean" }
 - **400 Bad Request**: 잘못된 요청  |
-  | 상품 상세 조회 | GET | /api/products/{id} | 특정 상품 상세 조회 | - | id (Long) | - **200 OK** : 상품 상세 조회 성공
-  { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "info": "string", "manufacturer": "string", "productImgUrls": ["url1", "url2"], "createdAt": "datetime", "updatedAt": "datetime", "soldOut": "boolean" }
-- **400 Bad Request**: 잘못된 요청
+| 상품 상세 조회 | GET | /api/products/{id} | 특정 상품 상세 조회 | - | id (Long) | - **200 OK** : 상품 상세 조회 성공 
+ { "id": "Long", "categoryId": "Long", "categoryName": "string", "productName": "string", "price": "int", "info": "string", "manufacturer": "string", "productImgUrls": ["url1", "url2"], "createdAt": "datetime", "updatedAt": "datetime", "soldOut": "boolean" } 
+- **400 Bad Request**: 잘못된 요청 
 - **404 Not Found**: 상품을 찾을 수 없음 |
 
 ### 장바구니 (`Cart`)
@@ -411,13 +409,13 @@ Discord, Notion
 | --- | --- | --- | --- | --- | --- | --- |
 | 조회 | GET | /api/carts | 로그인 한 회원의 장바구니 목록 조회 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : 
 {
-”message”: “장바구니 조회 완료했습니다!”,
-“carts”: [
-{
-”productId”: Long,
-“quantity”: int
-}
-]
+    ”message”: “장바구니 조회 완료했습니다!”,
+    “carts”: [
+        {
+            ”productId”: Long,
+            “quantity”: int
+        }
+    ]
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -432,27 +430,27 @@ Discord, Notion
 | MVP | Method | URI | Description | Headers | Request Param | Response |
 | --- | --- | --- | --- | --- | --- | --- |
 | 쿠폰 목록 조회 | GET | /api/admin/coupons | 존재하는 쿠폰 전체 조회 (유효한 쿠폰만 조회 / 전체 쿠폰 조회) | `Authorization: Bearer JWT_TOKEN` | {
-“page”: int,
-“includeInActiveCoupons”: boolean
-} | - 200 OK :
+  “page”: int,
+  “includeInActiveCoupons”: boolean
+} | - 200 OK : 
 {
-”message”: “쿠폰 목록 조회 완료했습니다!”,
-“coupons”: [
-{
-“id”: Long,
-“name”: String,
-“code”: String,
-“type”: CouponType,
-“value”: int,
-“percentage”: int,
-“minValue”: int,
-“active”: boolean,
-“expiredAt”: LocalDate,
-“categoryName”: String,
-“used”: boolean
-}
-],
-“totalPages”: int
+    ”message”: “쿠폰 목록 조회 완료했습니다!”,
+    “coupons”: [
+        {
+            “id”: Long,
+             “name”: String,
+             “code”: String,
+             “type”: CouponType,
+             “value”: int,
+             “percentage”: int,
+             “minValue”: int,
+             “active”: boolean,
+             “expiredAt”: LocalDate,
+             “categoryName”: String,
+             “used”: boolean
+         }
+    ],
+    “totalPages”: int
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -465,30 +463,30 @@ Discord, Notion
 | 보유 쿠폰 전체 조회 | GET | /api/coupons | 로그인 한 회원의 보유 쿠폰 전체 조회 (유효한 쿠폰만 조회 / 전체 쿠폰 조회) | `Authorization: Bearer JWT_TOKEN` | {
     “page”: int,
     “includeInActiveCoupons”: boolean
-} | - 200 OK :
+} | - 200 OK : 
 {
 ”message”: “쿠폰 목록 조회 완료했습니다!”
-“coupons”: [
-{
-“id”: Long,
-“name”: String,
-“code”: String,
-“type”: CouponType,
-“value”: int,
-“percentage”: int,
-“minValue”: int,
-“active”: boolean,
-“expiredAt”: LocalDate,
-“categoryName”: String,
-“used”: boolean
-}
-],
-“totalPages”: int
+    “coupons”: [
+        {
+            “id”: Long,
+            “name”: String,
+            “code”: String,
+            “type”: CouponType,
+            “value”: int,
+            “percentage”: int,
+            “minValue”: int,
+            “active”: boolean,
+            “expiredAt”: LocalDate,
+            “categoryName”: String,
+            “used”: boolean
+         }
+    ],
+    “totalPages”: int
 }
 
 - 403 Forbidden : “권한이 없는 사용자입니다.”
 - 500 Internal Server Error : “서버 에러” |
-  | 쿠폰 사용 | POST | /api/coupons/{couponMemberId} | 상품에 쿠폰 사용 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : “쿠폰이 사용되었습니다! couponMemberId: ” + couponMemberId
+| 쿠폰 사용 | POST | /api/coupons/{couponMemberId} | 상품에 쿠폰 사용 | `Authorization: Bearer JWT_TOKEN` |  | - 200 OK : “쿠폰이 사용되었습니다! couponMemberId: ” + couponMemberId
 
 - 400 Bad Request : “쿠폰 정보가 유효하지 않습니다.”
 - 403 Forbidden : “권한이 없는 사용자입니다.”
@@ -506,46 +504,46 @@ Discord, Notion
 }` | - 200 OK :
 `[{
 "orders":[
-{"orderId":"int",
-"orderStatus":"string",
-"totalPrice":"int",
-"discountedTotalPrice":"int",
-"email":"string",
-"createdAt":"localDateTime",
-"coupons":[
-{"couponId":"int",
-"name":"string",
-"discountPrice":"int"}
-]}
+  {"orderId":"int",
+  "orderStatus":"string",
+  "totalPrice":"int",
+  "discountedTotalPrice":"int",
+  "email":"string",
+  "createdAt":"localDateTime",
+  "coupons":[
+    {"couponId":"int",
+    "name":"string",
+    "discountPrice":"int"}
+  ]}
 ],
 "totalPages":"int"
 }]`
 
 - 403 Forbidden : “권한이 없습니다.”
 - 500 Internal Server Error : “서버 에러” |
-  | 전체 주문 조회 (회원) | GET | /api/orders | 각 회원의 전체 주문 조회 |  | `{
+| 전체 주문 조회 (회원) | GET | /api/orders | 각 회원의 전체 주문 조회 |  | `{
 "page":"int",
 "productName":"string"
 }` | - 200 OK :
-  `[{
-  "orders":[
-    "orderId":"int",
-    "orderStatus":"string",
-    "totalPrice":"int",
-    "discountedTotalPrice":"int",
-    "deliveryAddress":"string",
-    "productNames":[
-      "string"
-    ],{}
-    "productImgUrl":"string",
-    "createdAt":"localDateTime"
-  ],
-  "totalPages":"int"
-  }]`
+`[{
+"orders":[
+  "orderId":"int",
+  "orderStatus":"string",
+  "totalPrice":"int",
+  "discountedTotalPrice":"int",
+  "deliveryAddress":"string",
+  "productNames":[
+    "string"
+  ],{}
+  "productImgUrl":"string",
+  "createdAt":"localDateTime"
+],
+"totalPages":"int"
+}]`
 
 - 403 Forbidden : “권한이 없습니다.”
 - 500 Internal Server Error : “서버 에러” |
-  | 주문 생성 (회원) | POST | /api/order | 주문 생성 | `{
+| 주문 생성 (회원) | POST | /api/order | 주문 생성 | `{
 "postalCode":"string",
 "deliveryAddress":"string",
 "detailedAddress":"string",
@@ -564,29 +562,29 @@ Discord, Notion
   "couponMemberId":"int"
 ]
 }` |  | - 201 Created :
-  `{
-  "orderId":"int",
-  "orderStatus":"string",
-  "totalPrice":"int",
-  "discountedTotalPrice":"int",
-  "deliveryFee":"int",
-  "postalCode":"string",
-  "deliveryAddress":"string",
-  "detailedAddress":"string",
-  "deliveryReceiver":"string",
-  "deliveryPhone":"string",
-  "deliveryMemo":"string",
-  "createdAt":"localDateTime",
-  "orderProducts":[
-    "productId":"int",
-    "orderProductName":"string",
-    "orderProductPrice":"int",
-    "count":"int",
-    "discountedPrice":"int",
-    "couponName":"string",
-    "productImgUrl":"stirng"
-  ]
-  }`
+`{
+"orderId":"int",
+"orderStatus":"string",
+"totalPrice":"int",
+"discountedTotalPrice":"int",
+"deliveryFee":"int",
+"postalCode":"string",
+"deliveryAddress":"string",
+"detailedAddress":"string",
+"deliveryReceiver":"string",
+"deliveryPhone":"string",
+"deliveryMemo":"string",
+"createdAt":"localDateTime",
+"orderProducts":[
+  "productId":"int",
+  "orderProductName":"string",
+  "orderProductPrice":"int",
+  "count":"int",
+  "discountedPrice":"int",
+  "couponName":"string",
+  "productImgUrl":"stirng"
+]
+}`
 
 - 400 Bad Request : “품절된 상품”
 - 403 Forbidden : “권한이 없습니다.”
