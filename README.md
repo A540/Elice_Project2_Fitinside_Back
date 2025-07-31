@@ -92,8 +92,6 @@ Discord, Notion
 
 ---
 
-- 도메인별 사용안하는 exception 패키지 삭제하기
-    
     ```bash
     
     # address : 배송지
@@ -210,7 +208,7 @@ Discord, Notion
 ### 회원
 
 - 이메일, 비밀번호 기반의 로그인 기능
-    
+
     ![회원1.gif](./wiki/회원1.gif)
     
 - 이메일, 비밀번호 기반의 회원가입 기능
